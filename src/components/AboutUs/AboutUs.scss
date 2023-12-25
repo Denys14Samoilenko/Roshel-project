@@ -1,0 +1,22 @@
+.about {
+  &__content {
+    position: relative;
+    background-image: url("/images/Roshel_about.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  &__description {
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+    max-width: 600px;
+    color: #fff;
+
+    @media (min-width: 680px) {
+      font-size: 26px;
+    }
+  }
+}

@@ -1,0 +1,39 @@
+.modal {
+  position: fixed;
+  top: 30px;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba($color: #000000, $alpha: 0.4);
+  opacity: 0;
+  transition: 0.5s;
+  pointer-events: none;
+
+  &.active {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  &__content {
+    position: relative;
+    padding: 5px;
+    background-color: #fff;
+    transform: scale(0.5);
+    transition: transform 0.5s;
+    max-width: 600px;
+  }
+
+  &__content.active {
+    transform: scale(1);
+  }
+
+  &__button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+  }
+}

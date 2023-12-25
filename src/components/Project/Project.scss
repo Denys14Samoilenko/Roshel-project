@@ -1,0 +1,12 @@
+.product {
+  padding: 20px 0;
+
+  &__slider {
+    & .swiper-pagination-bullet {
+      width: 20px;
+      height: 3px;
+      border-radius: 0;
+      background-color: #fff;
+    }
+  }
+}

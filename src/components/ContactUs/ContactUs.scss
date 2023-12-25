@@ -1,0 +1,21 @@
+.contacts {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 0 30px;
+  background-image: url("../../images/contacts_bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+
+  &__content {
+    position: relative;
+    z-index: 1;
+
+    @media (min-width: 680px) {
+      font-size: 20px;
+    }
+  }
+}
